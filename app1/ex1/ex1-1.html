@@ -28,9 +28,13 @@
 	var i;
 	document.getElementById("Button1").addEventListener('click',readTab);
 
-	function readTab(){
-				//TODO
-	}
+	function readTab() {
+  		var cd = JSON.parse(CD);   // transforme le texte en objet
+  		for (const cle in cd) {    // boucle sur chaque clé
+    		console.log(cle + " : " + cd[cle]);   // affiche clé : valeur
+  }
+}
+
   
 </script>
 
